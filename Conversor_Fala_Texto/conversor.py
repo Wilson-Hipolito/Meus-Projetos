@@ -1,7 +1,10 @@
+"""Testando conversor de texto em voz"""
 import pyttsx3
 
-engine = pyttsx3.init()
+robo = pyttsx3.init()
 
-engine.say('Hello World')
+msg_robo = input("Hello World.")
 
-engine.runAndWait()
+robo.say(msg_robo)
+
+robo.runAndWait()
